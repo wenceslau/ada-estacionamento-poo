@@ -1,4 +1,4 @@
-package com.ada.parking;
+package com.ada.estacionamento;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

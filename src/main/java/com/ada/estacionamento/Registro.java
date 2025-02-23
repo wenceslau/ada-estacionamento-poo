@@ -1,4 +1,4 @@
-package com.ada.parking;
+package com.ada.estacionamento;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -20,10 +20,10 @@ public class Registro {
     public void setHoraSaida(LocalDateTime horaSaida) {
 
         if (horaSaida == null){
-            throw new IllegalArgumentException("Check-out date is required");
+            throw new IllegalArgumentException("Hora de saída é obrigatória");
         }
         if (horaSaida.isBefore(horaEntrada)){
-            throw new IllegalArgumentException("Check-out date must be after check-in date");
+            throw new IllegalArgumentException("Hora de saída deve ser após a hora de entrada");
         }
 
         this.horaSaida = horaSaida;

@@ -1,6 +1,6 @@
-package com.ada.parking;
+package com.ada.estacionamento;
 
-import com.ada.parking.veiculos.VeiculoTipo;
+import com.ada.estacionamento.veiculos.VeiculoTipo;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -44,13 +44,13 @@ public class Main {
         var veiculoTipoEnum = VeiculoTipo.converter(veiculoTipo);
         var veiculo = veiculoTipoEnum.criarInstancia(placa);
 
-        var vehicleRegistration = estacionamento.registrarVeiculo(veiculo);
+        var registro = estacionamento.registrarVeiculo(veiculo);
 
-        if (vehicleRegistration.getHoraSaida() == null) {
+        if (registro.getHoraSaida() == null) {
             System.out.printf("Entrada do veículo com placa: %s realizada.%n", placa);
         } else {
             System.out.printf("Saida do veículo com placa: %s. Tempo: %d minutos. Valor a ser cobrado: R$ %.2f%n",
-                    placa, vehicleRegistration.getDuracao().toMinutes(), vehicleRegistration.getValorPagar());
+                    placa, registro.getDuracao().toMinutes(), registro.getValorPagar());
         }
 
         //Imprime o relatório

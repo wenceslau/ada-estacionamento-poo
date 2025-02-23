@@ -17,7 +17,7 @@ Projeto de estacionamento para a disciplina de Programação Orientada a Objetos
 ## Enunciado
 
 ### Requisitos
-Criação de um sistema de estacionamento para controlar veículos em um estacionamento. 
+Criação de um sistema para controlar veículos em um estacionamento. 
 
 O sistema deve ser capaz de:
 
@@ -34,9 +34,9 @@ O sistema deve ser capaz de:
 > **RN1** - O estacionamento possui um limite de vagas que deve ser informado no momento da inicialização.
 
 > **RN2** - O estacionamento não deve permitir a entrada de veículos quando estiver lotado.
-> 
+ 
 > **RN3** - O estacionamento deve permitir apenas veículos do tipo Carro e Moto.
->
+
 > **RN4** - O estacionamento possui um valor fixo primeira hora e um valor para cada hora adicional baseado no tipo de veículo.
 > - Carro: R$ 5,00 para a primeira hora e R$ 6,00 para hora adicional.
 > - Moto: R$ 3,00 para a primeira hora e R$ 4,00 para hora adicional.
@@ -46,7 +46,7 @@ O sistema deve ser capaz de:
 >  
 > De 0 a 5 minutos não é cobrado nenhum valor.  
 > Acima de 5 minutos é cobrado o valor de uma hora.  
-> Acima de 1 hora é cobrado o valor da hora adicional.  
+> Acima de 1 hora é cobrado o valor de uma hora e mais o valor da hora adicional.
 > 
 >  **Exemplo 1:** 1h e 4 minutos = R$ 5,00 (1 hora) + R$ 6,00 (4 minutos) = R$ 11,00.  
 >  **Exemplo 2:** 1h e 59 minutos = R% 5,00 (1 horas) + R$ 6,00 (59 minuto) = R$ 11,00.  
@@ -57,7 +57,7 @@ O sistema deve ser capaz de:
 - O sistema deve ser capaz de identificar se o estacionamento está lotado
 
 
-- Para cada veículo que entrar no estacionamento, o sistema deve solicitar a placa do veículo e o tipo do veículo
+- Para cada veículo o sistema deve solicitar a placa do veículo e o tipo do veículo
 
 
 - O sistema deve ser capaz de identificar se o veículo já está no estacionamento
@@ -84,8 +84,10 @@ o sistema deve exibir um relatório com os veículos que estão no estacionament
 
 ### Estrutura do Projeto
 
-O projeto deve ser construído em Java usando os conceitos de Programação Orientada a Objetos.
-Aplicar o conceito de herança e polimorfismo para a classe Veiculo, permitindo a criação de novos tipos de veículos sem afetar o sistema.
+O projeto deve ser construído em Java usando os conceitos de Programação Orientada a Objetos.  
+
+Aplicar o conceito de herança e polimorfismo para a classe Veiculo, permitindo a criação de novos tipos de veículos sem afetar o que ja está construído.  
+
 O sistema deve exibir um menu com as opções:
 
     1 - Registrar placa de veículo
@@ -115,15 +117,16 @@ Para o cálculo de valor a ser pago pode se usar a **API java.math do Java**, ou
  
 - Para cada tipo de veículo deve ser criada uma classe que herda de Veículo e implementa os métodos abstratos.  
 
-![img.png](img.png)
 
 ### Entrega
 O projeto deve ser entregue via LMS em um arquivo compactado com o nome do aluno.
 
 ### Demonstração
 
-![img.png](images/img.png)
+![img_0.png](images/img_0.png)
 
 ![img_1.png](images/img_1.png)1
 
 ![img_2.png](images/img_2.png)
+
+![img.png](images/img.png)
