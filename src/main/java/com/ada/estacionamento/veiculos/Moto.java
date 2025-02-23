@@ -1,7 +1,7 @@
-package com.ada.parking.veiculos;
+package com.ada.estacionamento.veiculos;
 
 
-import com.ada.parking.Veiculo;
+import com.ada.estacionamento.Veiculo;
 
 public class Moto extends Veiculo {
 

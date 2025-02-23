@@ -1,4 +1,4 @@
-package com.ada.parking;
+package com.ada.estacionamento;
 
 public abstract class Veiculo {
 

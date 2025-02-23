@@ -1,6 +1,6 @@
-package com.ada.parking.veiculos;
+package com.ada.estacionamento.veiculos;
 
-import com.ada.parking.Veiculo;
+import com.ada.estacionamento.Veiculo;
 
 import java.util.Arrays;
 
